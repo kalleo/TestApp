@@ -47,3 +47,10 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$('#footerbar a').on('click', function(e){
+    e.preventDefault();
+    var nextPage = $(e.target.hash);
+    $("#pages .current").removeClass("current");
+    nextPage.addClass("current");
+});

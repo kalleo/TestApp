@@ -123,3 +123,44 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+footer {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+
+header {
+	font-size:24px;
+	width:100%;
+}
+
+
+#footerbar{
+    margin:0;
+    padding:0;
+		font-size:24px;
+		text-align:center;
+}
+#footerbar li {
+    display: inline;
+    float:left;
+    width: 50%;
+}
+#footerbar a {
+    color: black;
+    display: block;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-touch-callout:none;
+}
+
+#pages > div {
+    display: none;
+}
+#pages > div.current {
+    display: block;
+}

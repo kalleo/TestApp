@@ -21,7 +21,16 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
+	<feature name="http://api.phonegap.com/1.0/contacts" />
+    <gap:plugin name="ConactManager" />
+	
+	<plugin name="Compass" value="org.apache.cordova.CompassListener" />
+<!--	<feature name="http://api.phonegap.com/1.0/globalization" />
+	<gap:plugin name = "Globalization" />
 
+	<plugin name="Globalization" value="org.apache.cordova.Globalization" />
+	-->
+	<plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -50,7 +59,9 @@
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
+		<plugin name="Contacts" value="org.apache.cordova.ContactManager" />
     -->
+	
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
